@@ -10,7 +10,6 @@ on:
 jobs:
   test-run:
     runs-on: ubuntu-latest
-    id: test-run
     steps:
       - name: setup-repo
         uses: actions/checkout@v2
