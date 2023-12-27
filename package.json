@@ -1,0 +1,19 @@
+{
+  "name": "actions-learn",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "to learn tests",
+  "main": "main.js",
+  "repository": "git@github.com:MAb540/actions-learn.git",
+  "author": "M Abdullah <awana4872@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start":"node ./src/server.js"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3",
+    "vitest": "^1.0.4"
+  }
+}
