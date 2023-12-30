@@ -10,16 +10,17 @@ test("it should return 3 when subtracting 5 - 2", () => {
   expect(subtract(5, 2)).equal(3);
 });
 
-// test("it should check response of /me handler", async () => {
-//   const res = await request(server).get("/me");
-//   expect(res.statusCode).toBe(200);
-//   expect(res.headers["content-type"]).toBe("application/json");
-//   expect(res.body.data).toBe("response from me endpoint");
-// });
+test("it should check response of /me handler", async () => {
+  const res = await request(server).get("/me");
+  expect(res.statusCode).toBe(200);
+  expect(res.headers["content-type"]).toBe("application/json");
+  expect(res.body.data).toBe("response from me endpoint");
+});
 
-// test("it should check response of /you handler", async () => {
-//   const res = await request(server).get("/you");
-//   expect(res.statusCode).toBe(200);
-//   expect(res.headers["content-type"]).toBe("application/json");
-//   expect(res.body.data).toBe("response from you");
-// });
+test("it should check response of /you handler", async () => {
+  const res = await request(server).get("/you");
+  expect(res.statusCode).toBe(200);
+  expect(res.headers["content-type"]).toBe("application/json");
+  expect(res.body.data).toBe("response from you");
+});
+

@@ -21,6 +21,9 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: 'yarn.lock'
 
+      - name: install-dependencies
+        run : yarn
+
       - name: run-tests
         run: yarn run test
       
